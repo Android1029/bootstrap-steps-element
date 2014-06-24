@@ -1,0 +1,91 @@
+/* CSS Styles 
+
+These are overriding the nav-tabs classes in Twitter Bootstap
+
+*/
+
+* {
+	padding: 0;
+	margin: 0;
+}
+.steps-headers {
+	text-align: center;
+}
+
+.nav-steps {
+  border: none;
+  padding-bottom: 0px; 
+  background-color: #000000;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.nav-steps>li>a {
+  margin-right: 0px;
+  line-height: 1.428571429;
+  width: 20em; /* change to increase or decrease the width */
+  color: #FFFFFF;
+  border: none;
+}
+
+/* step arrow style */
+.nav-steps>.step a:after {
+	position: absolute;
+	z-index: 2;
+	content: '';
+	top: 0em;
+	right: -23px;
+	border-bottom: 17px solid transparent;
+	border-left: 23px solid #000000;
+	border-top: 23px solid transparent;
+}
+
+/* disable step arrow style for last item */
+.nav-steps>.step:last-child a:after {
+  display: none;
+}
+
+/* HOVER STYLE */
+
+/* hover state */
+.nav-steps>li a:hover {
+  background-color: #C9C8C8;
+  color: #000000;
+  border-radius: 0px;  
+}
+
+/* step arrow color on hover:after */
+.nav-steps .step:hover a:after {
+  border-left-color:  #C9C8C8;
+}
+
+/* ACTIVE STYLE */
+
+/* active state */
+.nav-steps>li.active>a, .nav-steps>li.active>a:hover, .nav-steps>li.active>a:focus {
+  background-color: #428bca;
+  color: #FFFFFF;
+  border-radius: 0px;
+  border: none;
+}
+
+/* step arrow color on active:after */
+.nav-steps .step.active a:after {
+  border-left-color:  #428bca;
+}
+
+/* STEPS */
+
+.steps-wrapper article {
+    padding: 2%;
+    color: #000000;
+}
+
+.step-header {
+    font-size: 1.2em;
+    color: #000000;
+}
+
+.step-description {
+    margin-bottom: 0px;
+}

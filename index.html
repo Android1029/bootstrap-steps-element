@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Bootstrap Steps Elements</title>
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/steps-element.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12" role="main">
+		<h3 class="text-center">Steps Wizard</h3>
+		<div class="steps-headers">
+		<ul class="nav nav-tabs nav-steps">
+			<li class="step">
+				<a href="#step-one-tab" data-toggle="tab">Register</a>
+			</li>
+			<li class="step">
+				<a href="#step-two-tab" data-toggle="tab">Payment Terms</a>
+			</li>
+			<li class="step">
+				<a href="#step-three-tab" data-toggle="tab">Enjoy your Goods</a>
+			</li>
+		</ul>
+		</div>
+		<div class="tab-content steps-wrapper">
+			<div class="tab-pane fade in active" id="step-one-tab">
+                <article class="text-center">
+                    <p class="step-header">Register</p>
+                    <p class="step-description">Fill in all your details and wait till a staff member gets in touch with you!</p>
+                </article>
+			</div>
+			<div class="tab-pane fade" id="step-two-tab">
+                <article class="text-center">
+                    <p class="step-header">Payment</p>
+                    <p class="step-description">Enter your payment details for the required course and select the desired dates you wish to attend</p>
+                </article>
+			</div>
+			<div class="tab-pane fade" id="step-three-tab">
+                <article class="text-center">
+                    <p class="step-header">Confirmation</p>
+                    <p class="step-description">A confirmation email will be sent to your email with the information pack. Enjoy and happy learning!</p>
+                </article>
+			</div>
+		</div>		
+		
+		
+        </div>
+      </div><!-- // row -->
+    </div><!-- //container --> 
+	<script src="assets/js/jquery-1.11.1.min.js"></script>
+	<script src="assets/js/bootstrap.min.js"></script>
+	</body>
+</html>
